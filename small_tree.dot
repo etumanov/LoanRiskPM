@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="sub_grade_A5 <= 2.0\ngini = 0.3\nsamples = 593159\nvalue = [763343, 175194]"] ;
+1 [label="sub_grade_B1 <= 2.0\ngini = 0.3\nsamples = 562526\nvalue = [718531, 171402]"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="term <= 0.6\ngini = 0.3\nsamples = 531656\nvalue = [674582, 166727]"] ;
+1 -> 2 ;
+3 [label="gini = 0.3\nsamples = 391111\nvalue = [525952, 93169]"] ;
+2 -> 3 ;
+4 [label="gini = 0.4\nsamples = 140545\nvalue = [148630, 73558]"] ;
+2 -> 4 ;
+5 [label="fico_score <= -0.1\ngini = 0.2\nsamples = 30870\nvalue = [43949, 4675]"] ;
+1 -> 5 ;
+6 [label="gini = 0.2\nsamples = 12891\nvalue = [18292, 2120]"] ;
+5 -> 6 ;
+7 [label="gini = 0.2\nsamples = 17979\nvalue = [25657, 2555]"] ;
+5 -> 7 ;
+8 [label="home_ownership_RENT <= 0.2\ngini = 0.1\nsamples = 30633\nvalue = [44812, 3792]"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="fico_score <= 4.8\ngini = 0.1\nsamples = 19711\nvalue = [29015, 2263]"] ;
+8 -> 9 ;
+10 [label="gini = 0.1\nsamples = 19706\nvalue = [29012, 2259]"] ;
+9 -> 10 ;
+11 [label="gini = 0.5\nsamples = 5\nvalue = [3, 4]"] ;
+9 -> 11 ;
+12 [label="dti <= -0.1\ngini = 0.2\nsamples = 10922\nvalue = [15797, 1529]"] ;
+8 -> 12 ;
+13 [label="gini = 0.1\nsamples = 6278\nvalue = [9247, 727]"] ;
+12 -> 13 ;
+14 [label="gini = 0.2\nsamples = 4644\nvalue = [6550, 802]"] ;
+12 -> 14 ;
+}
